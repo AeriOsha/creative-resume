@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         <div className="lg:col-span-5 relative">
           <div className="aspect-[3/4] rounded-[3rem] overflow-hidden bg-emerald-50 border-8 border-white shadow-2xl transition-transform duration-700 hover:rotate-2">
             <img 
-              src="/assets/images/robotics.jpg" 
+              src="./assets/images/robotics.jpg" 
               alt="robotics" 
               className="w-full h-full object-cover transition-all duration-1000"
             />
@@ -79,8 +79,8 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-6 relative">
-          <img src="/assets/images/greenSki.jpg" className="rounded-3xl shadow-lg w-full aspect-square object-cover hover:scale-[1.02] transition-transform" alt="skiing" />
-          <img src="/assets/images/whiteSki.jpg" className="rounded-3xl shadow-lg w-full aspect-square object-cover hover:scale-[1.02] transition-transform" alt="skiing" />
+          <img src="./assets/images/greenSki.jpg" className="rounded-3xl shadow-lg w-full aspect-square object-cover hover:scale-[1.02] transition-transform" alt="skiing" />
+          <img src="./assets/images/whiteSki.jpg" className="rounded-3xl shadow-lg w-full aspect-square object-cover hover:scale-[1.02] transition-transform" alt="skiing" />
           <div className="bg-emerald-900 text-white p-8 rounded-3xl col-span-2 text-center shadow-xl">
             <p className="text-emerald-100 font-bold serif italic text-xl">"something"</p>
           </div>
