@@ -1,7 +1,20 @@
 // src/pages/Projects.tsx
 import React, { useState } from 'react';
-import ProjectCard from '../components/ProjectCard';
-import { Project } from '../types';
+import ProjectCard from '../../components/ProjectCard';
+import { Project } from '../../types';
+
+import tattooPic from '../assets/images/tattooPic.jpg';
+import cupsOfLife from '../assets/images/cupsOfLife.jpg';
+import tierCupcakes from '../assets/images/tierCupcakes.jpg';
+import corsetImg from '../assets/images/corset.jpg';
+import ceramicMugs from '../assets/images/ceramicMugs.jpg';
+import cramped from '../assets/images/cramped.png';
+import fruitTart from '../assets/images/fruitTart.jpg';
+import rugTufting from '../assets/images/rugTufting.jpg';
+import sunflowerCupcakes from '../assets/images/sunflowerCupcakes.jpg';
+import quilt from '../assets/images/quilt.png';
+import ceramicBowl from '../assets/images/cermaicBowl.jpg';
+import midnightVigil from '../assets/images/midnightVigil.jpg';
 
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<'All Work' | Project['category']>('All Work');
@@ -12,87 +25,85 @@ const Projects: React.FC = () => {
       title: 'Stained Glass Embroidery Tattoo',
       category: 'Multimedia',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/tattooPic.JPG',
+      imageUrl: tattooPic,
     },
     {
       id: 'cups-life',
       title: 'Cups of Life',
       category: 'Multimedia',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/cupsOfLife.jpg',
+      imageUrl: cupsOfLife,
     },
     {
       id: 'cupcake-bouquet',
       title: 'Tiers of Flower Cupcakes',
       category: 'Baking',
       description: 'Hand-piped buttercream flowers on a tiered display.',
-      imageUrl: './assets/images/tierCupcakes.jpg',
+      imageUrl: tierCupcakes,
     },
     {
       id: 'corset',
       title: 'Sewed Waist Corset',
       category: 'Fiber Arts',
       description: ' ',
-      imageUrl: './assets/images/corset.jpg',
+      imageUrl: corsetImg,
     },
     {
       id: 'ceramic-mugs',
       title: 'Ceramic Mugs',
-      category: 'Multimedia',
+      category: 'Ceramics',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/ceramicMugs.jpg',
+      imageUrl: ceramicMugs,
     },
     {
       id: 'cramped',
       title: 'Cramped',
       category: 'Multimedia',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/cramped.png',
+      imageUrl: cramped,
     },
     {
       id: 'fruit-tart',
       title: 'Classic Fruit Tart',
       category: 'Multimedia',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/fruitTart.jpg',
+      imageUrl: fruitTart,
     },
     {
       id: 'tufting-heart',
       title: 'Heart of the Studio',
       category: 'Fiber Arts',
       description: 'A large-scale tufted punch needle rug with bold imagery.',
-      imageUrl: './assets/images/rugTufting.jpg',
+      imageUrl: rugTufting,
     },
     {
       id: 'sunflower',
       title: 'Sunflower Cupcakes',
       category: 'Multimedia',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/sunflowerCupcakes.jpg',
+      imageUrl: sunflowerCupcakes,
     },
     {
       id: 'quilt',
       title: 'Sewed Pinwheel Quilt Patch',
       category: 'Multimedia',
       description: 'I designed matching memorial tattoos combining watercolor and fiber arts.',
-      imageUrl: './assets/images/quilt.png',
+      imageUrl: quilt,
     },
     {
       id: 'floral-bowl',
       title: 'Painted Ceramic Bowl',
       category: 'Ceramics',
       description: 'Hand-painted ceramic mugs exploring floral symmetry.',
-      imageUrl: './assets/images/cermaicBowl.jpg',
+      imageUrl: ceramicBowl,
     },
     {
       id: 'midnight-vigil',
       title: 'Midnight Vigil',
       category: 'Multimedia',
       description: 'Surreal ink illustration of a winged eyeball over a candle.',
-      imageUrl: './assets/images/midnightVigil.jpg',
+      imageUrl: midnightVigil,
     },
-
-
   ];
 
   const filters: Array<'All Work' | Project['category']> = ['All Work', 'Baking', 'Ceramics', 'Multimedia', 'Fiber Arts'];

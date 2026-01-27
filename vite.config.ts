@@ -1,9 +1,10 @@
-// filename: vite.config.ts
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
-  base: '/creativeresume/',
+  
+  base: '/portfolio/',
   server: {
     port: 3000,
     host: '0.0.0.0',
@@ -11,7 +12,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': new URL('.', import.meta.url).pathname
-    }
-  }
+
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+
 });

@@ -1,7 +1,7 @@
-
+// filename: src/App.tsx
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Navigation from '../components/Navigation';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
@@ -26,9 +26,28 @@ const App: React.FC = () => {
               <p className="text-emerald-400 font-light">Colorado School of Mines Student</p>
             </div>
             <div className="flex gap-8 text-sm font-bold uppercase tracking-widest">
-              <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-              <a href="#" className="hover:text-white transition-colors">GitHub</a>
-              <a href="#" className="hover:text-white transition-colors">Email</a>
+              <a
+                href="https://www.linkedin.com/in/aeri-osha-bb1b7a323"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/AeriOsha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                GitHub
+              </a>
+              <a
+                href="mailto:aeriosha@gmail.com"
+                className="hover:text-white transition-colors"
+              >
+                Email
+              </a>
             </div>
           </div>
           <div className="max-w-6xl mx-auto mt-20 pt-8 border-t border-emerald-900/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-emerald-700">

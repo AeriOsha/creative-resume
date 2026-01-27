@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AeriOsha.github.io/creative-resume/",
+  "homepage": "https://aeriosha.github.io/creative-resume/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

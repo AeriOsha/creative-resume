@@ -1,7 +1,7 @@
-
+// src/components/Resume.tsx
 import React from 'react';
-import { Experience } from '../types';
-
+import { Experience } from '../../types';
+import resume from '../assets/AeriOshaResume.pdf'
 const Resume: React.FC = () => {
   const experience: Experience[] = [
     {
@@ -67,9 +67,13 @@ const Resume: React.FC = () => {
           <p className="text-xs font-black uppercase tracking-widest text-stone-400">832.605.1619</p>
           <p className="text-xs font-black uppercase tracking-widest text-emerald-700">aeriosha@gmail.com</p>
           <div className="pt-4">
-            <button className="px-6 py-2 bg-stone-900 text-white rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-emerald-900 transition-all shadow-xl shadow-stone-900/10 active:scale-95">
+            <a
+              href={resume}
+              download="AeriOshaResume.pdf"
+              className="inline-block px-6 py-2 bg-stone-900 text-white rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-emerald-900 transition-all shadow-xl shadow-stone-900/10 active:scale-95"
+            >
               Download Full PDF
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -135,7 +139,7 @@ const Resume: React.FC = () => {
                 <div key={exp.id} className="group relative">
                   <div className="flex flex-col md:flex-row gap-2 md:gap-8">
                     <div className="md:w-32 shrink-0">
-                       <span className="text-[10px] font-black text-stone-400 uppercase tracking-widest">{exp.period}</span>
+                      <span className="text-[10px] font-black text-stone-400 uppercase tracking-widest">{exp.period}</span>
                     </div>
                     <div className="space-y-3">
                       <h3 className="text-2xl font-bold text-stone-900 serif group-hover:text-emerald-800 transition-colors leading-tight">
